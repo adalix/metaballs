@@ -4,14 +4,14 @@ const ctx = canvas.getContext('2d')
 canvas.width = innerWidth
 canvas.height = innerHeight
 
-ctx.fillStyle = 'aqua'
+ctx.fillStyle = 'rgb(192, 73, 73)'
 
 class Ball {
     constructor(effect){
         this.effect = effect;
         this.x = Math.random() * this.effect.width;;
         this.y = 0;
-        this.radius = Math.random() * 280 + 40;
+        this.radius = Math.random() * 250 + 40;
         this.speedX = Math.random() - 0.5;
         this.speedY = Math.random() - 0.5;
 
@@ -66,7 +66,7 @@ class MetaBallEffect{
 
 const effect = new MetaBallEffect(canvas.width, canvas.height)
 
-effect.init(30)
+effect.init(50)
 
 console.log(effect)
 
