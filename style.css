@@ -5,6 +5,7 @@
 }
 
 body{
+    font-family: 'Coca-Cola', sans-serif;
     background-color: black;
     position: relative;
 }
@@ -24,6 +25,9 @@ h1{
     z-index: 100;
     color: white;
     font-size: 120px;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 canvas{

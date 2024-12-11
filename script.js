@@ -66,7 +66,7 @@ class MetaBallEffect{
 
 const effect = new MetaBallEffect(canvas.width, canvas.height)
 
-effect.init(50)
+effect.init(40)
 
 console.log(effect)
 
