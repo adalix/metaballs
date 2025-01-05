@@ -12,8 +12,8 @@ class Ball {
         this.x = Math.random() * this.effect.width;;
         this.y = 0;
         this.radius = Math.random() * 250 + 40;
-        this.speedX = Math.random() - 0.5;
-        this.speedY = Math.random() - 0.5;
+        this.speedX = Math.random() * 1 - 0.5;
+        this.speedY = Math.random() * 1 - 0.5;
 
     }
     update(){
@@ -66,7 +66,7 @@ class MetaBallEffect{
 
 const effect = new MetaBallEffect(canvas.width, canvas.height)
 
-effect.init(40)
+effect.init(50)
 
 console.log(effect)
 
